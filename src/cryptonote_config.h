@@ -50,9 +50,9 @@
 #define BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW               60
 
 // MONEY_SUPPLY - total number coins to be generated
-#define MONEY_SUPPLY                                    ((uint64_t)2500000000000000)
-#define EMISSION_SPEED_FACTOR_PER_MINUTE                (18)
-#define FINAL_SUBSIDY_PER_MINUTE                        ((uint64_t)50000000) // 5 * pow(10, 7)
+#define MONEY_SUPPLY                                    ((uint64_t)9700000000000000)
+#define EMISSION_SPEED_FACTOR_PER_MINUTE                (5)
+#define FINAL_SUBSIDY_PER_MINUTE                        ((uint64_t)2400000000) // 24 * pow(10, 7)
 
 #define CRYPTONOTE_REWARD_BLOCKS_WINDOW                 100
 #define CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2    60000 //size of block (bytes) after which reward for block calculated using block size
@@ -146,12 +146,12 @@ namespace config
 
   uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 25;
   uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX = 26;
-  uint16_t const P2P_DEFAULT_PORT = 15050;
-  uint16_t const RPC_DEFAULT_PORT = 15051;
+  uint16_t const P2P_DEFAULT_PORT = 15060;
+  uint16_t const RPC_DEFAULT_PORT = 15061;
   boost::uuids::uuid const NETWORK_ID = { {
       0x15, 0x35, 0xF5, 0x75 , 0x65, 0x02 , 0x42, 0x62, 0x12, 0x32, 0x02, 0x82, 0x12, 0xA2, 0xA2, 0x12
     } };
-  std::string const GENESIS_TX = "013c01ff0001fccdbcc323029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101314af585f00f3d8ef9f049b232d7c3d9bdb06b9504537cbcbb7e39f66634843c";
+  std::string const GENESIS_TX ="013c01ff000580e497d012029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880718090dfc04a022a74a3c4c36d32e95633d44ba9a7b8188297b2ac91afecab826b86fabaa7091680d0dbc3f4020252d128bc9913d5ee8b702c37609917c2357b2f587e5de5622348a3acd718e5d680e0bcefa75702b8ed916c56b3a99c9cdf22c7be7ec4e85587e5d40bc46bf6995313c288ad841e8080bb8b939b44021b452b4ac6c6419e06181f8c9f0734bd5bb132d8b75b44bbcd07dd8f553acba6210117bfc7241a0f5ca2e507b6df76b5c2c29dda2b936f137b791e25ec675298a2e6";
   uint32_t const GENESIS_NONCE = 10000;
 
   namespace testnet
